@@ -20,6 +20,12 @@ set t_Co=256
 " Monokai
 colorscheme Monokai
 
+" more things to get vim-airline to work
+set encoding=utf-8
+" start vim-airline at startup
+set laststatus=2
+" populate the g:airline_symbols dictionary automatically at startup
+let g:airline_powerline_fonts = 1
 
 """ Mappings 
 " remap escape
@@ -40,3 +46,6 @@ let mapleader = ","
 if !exists(":Sov")
 	command Sov execute "source ~/.vimrc"
 endif
+
+" Special behaviors for different filetypes
+au BufRead,BufNewFile *.md set filetype=markdown
