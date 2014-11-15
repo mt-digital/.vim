@@ -13,12 +13,18 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-" line width guide at 80th column
-set colorcolumn=80
 " 256 colors
 set t_Co=256
 " Monokai
-colorscheme Monokai
+"colorscheme Monokai
+colorscheme molokai
+highlight ColorColumn ctermbg=25
+"colorscheme Tomorrow-Night
+"AirlineTheme understated
+
+" line width guide at 80th column
+set colorcolumn=80
+highlight Folded ctermbg=235
 
 " more things to get vim-airline to work
 set encoding=utf-8
