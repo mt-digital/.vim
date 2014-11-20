@@ -62,9 +62,9 @@ if !exists(":Sov")
 endif
 
 " Special behaviors for different filetypes
-au BufRead,BufNewFile *.md set filetype=markdown textwidth=70 wrap
+au BufRead,BufNewFile *.md set filetype=ghmarkdown textwidth=70 wrap 
 au BufRead,BufNewFile *.txt set filetype=asciidoc 
-au BufRead,BufNew *.md,*.asciidoc,*.txt setlocal textwidth=80
+au BufRead,BufNew *.md,*.asciidoc,*.txt setlocal textwidth=80 
 autocmd BufRead,BufNewFile *.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT
         \ setlocal autoindent expandtab tabstop=8 softtabstop=2 shiftwidth=2 filetype=asciidoc
         \ textwidth=70 wrap formatoptions=tcqn
