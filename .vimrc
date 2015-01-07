@@ -15,16 +15,19 @@ set softtabstop=4
 
 " 256 colors
 set t_Co=256
-" Monokai
-"colorscheme Monokai
+" molokai
 colorscheme molokai
+" solarized light
+"colorscheme solarized
+"" Tomorrow
+"colorscheme Tomorrow
 highlight ColorColumn ctermbg=25
 "colorscheme Tomorrow-Night
-"AirlineTheme understated
+"AirlineTheme base16
 
 " line width guide at 80th column
 set colorcolumn=80
-highlight Folded ctermbg=235
+"highlight Folded ctermbg=235
 
 " more things to get vim-airline to work
 set encoding=utf-8
@@ -63,6 +66,7 @@ endif
 
 " Special behaviors for different filetypes
 au BufRead,BufNewFile *.md set filetype=ghmarkdown textwidth=70 wrap 
+au BufRead,BufNewFile *.js set tabstop=8 expandtab softtabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.txt set filetype=asciidoc 
 au BufRead,BufNew *.md,*.asciidoc,*.txt setlocal textwidth=80 
 autocmd BufRead,BufNewFile *.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT
