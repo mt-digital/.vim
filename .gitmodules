@@ -18,7 +18,7 @@
 	url = https://github.com/bling/vim-airline.git
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim.git
+	url = git@github.com:mtpain/snipmate.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -37,3 +37,9 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "bundle/utilisnips"]
+	path = bundle/utilisnips
+	url = https://github.com/SirVer/ultisnips.git
