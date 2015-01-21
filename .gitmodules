@@ -43,3 +43,6 @@
 [submodule "bundle/utilisnips"]
 	path = bundle/utilisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = git://github.com/lervag/vim-latex
