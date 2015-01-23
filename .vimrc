@@ -12,6 +12,8 @@ set tabstop=8
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+" max number of git gutter markers
+let g:gitgutter_max_signs=1000
 
 " 256 colors
 set t_Co=256
@@ -74,7 +76,7 @@ autocmd BufRead,BufNewFile *.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT
         \ textwidth=70 wrap formatoptions=tcqn
         \ formatlistpat=^\\s*\\d\\+\\.\\s\\+\\\\|^\\s*<\\d\\+>\\s\\+\\\\|^\\s*[a-zA-Z.]\\.\\s\\+\\\\|^\\s*[ivxIVX]\\+\\.\\s\\+
         \ comments=s1:/*,ex:*/,://,b:#,:%,:XCOMM,fb:-,fb:*,fb:+,fb:.,fb:>
-
+au BufRead,BufNewFile *.tex set colorcolumn=0
 
 " Incremental searching
 set incsearch

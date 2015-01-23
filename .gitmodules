@@ -37,3 +37,9 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/vim-numbertoggle"]
+	path = bundle/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "bundle/vim-latex"]
+	path = bundle/vim-latex
+	url = https://github.com/lervag/vim-latex.git
