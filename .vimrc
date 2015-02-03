@@ -51,3 +51,6 @@ endif
 
 " Special behaviors for different filetypes
 au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.html set filetype=htmldjango
+
+au BufRead,BufNewFile *.tex set foldmethod=syntax foldlevel=2

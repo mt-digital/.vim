@@ -23,6 +23,8 @@ let g:airline_symbols.branch = '⎇'
 "
 " Special behaviors for different filetypes
 au BufRead,BufNewFile *.md set filetype=markdown
+" Always read html as htmldjango in case using templates
+au BufRead,BufNewFile *.html set filetype=htmldjango
 
 " incremental search
 set incsearch
