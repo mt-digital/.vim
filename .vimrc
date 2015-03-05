@@ -68,7 +68,7 @@ endif
 
 " Special behaviors for different filetypes
 au BufRead,BufNewFile *.md set filetype=ghmarkdown textwidth=70 wrap 
-au BufRead,BufNewFile *.js set tabstop=8 expandtab softtabstop=2 shiftwidth=2
+au BufRead,BufNewFile *.js,*.html set tabstop=8 expandtab softtabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.txt set filetype=asciidoc 
 au BufRead,BufNew *.md,*.asciidoc,*.txt setlocal textwidth=80 
 autocmd BufRead,BufNewFile *.txt,*.asciidoc,README,TODO,CHANGELOG,NOTES,ABOUT
@@ -88,3 +88,9 @@ au BufRead,BufNewFile *.py set foldmethod=indent foldnestmax=3
 " Folding
 nnoremap <space> za
 vnoremap <space> zf
+
+set noerrorbells
+set novisualbell
+set t_vb=
+
+autocmd! GUIEnter * set vb t_vb=
