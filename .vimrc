@@ -18,7 +18,7 @@ let g:gitgutter_max_signs=1000
 " 256 colors
 set t_Co=256
 " molokai
-colorscheme molokai
+"colorscheme molokai
 " solarized light
 "colorscheme solarized
 "" Tomorrow
